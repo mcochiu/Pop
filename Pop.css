@@ -1,0 +1,70 @@
+/* Font */
+
+
+/* center canvas */
+
+#canvas{
+    border: 2px solid black;
+
+}
+
+.adjust{
+    width: 100%;
+    height: auto;
+}
+
+#gasDs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-image: url(Images/dialogue/gasbuttonsprite.png);
+}
+
+#audio{
+    padding-top:  20px;
+}
+
+.btn-primary{
+    --bs-btn-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-active-bg: black;
+    --bs-btn-disabled-color: black;
+    --bs-btn-bg: #11acff ;
+    --bs-btn-border-color: #11acff ;
+    --bs-btn-disabled-bg: #11acff ;    
+    --bs-btn-disabled-border-color: #11acff ;
+}
+
+.btn{
+    font-weight: bold;
+}
+
+#UserInput{
+    width: 700px;
+    margin: auto;
+}
+
+#textInput{
+    background-color: #f1fbec;
+}
+
+.popover-header{
+    font-style: italic;
+}
+
+.Modal{
+    text-align: left !important;
+    margin: 15px;
+}
+
+.credits{
+    font-size: small;
+    font-style: italic;
+}
+
+body{
+    text-align: center;
+    background-color: #BBD8B3;
+}
+
