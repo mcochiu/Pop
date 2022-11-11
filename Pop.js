@@ -1,3 +1,5 @@
+// devMarco 2022
+console.log("Version up to date");
 let canvas = document.querySelector("canvas");
 canvas.width = 700;
 canvas.height = 500;
@@ -201,7 +203,6 @@ function restartGame(){
 }
 
 function clear(index){
-    console.log("Deleting---" + Object.values(txtMessages)[onscreenTxts[index]] + "Using index of "+index);
     c.clearRect(ranXs[index]+clearPXY,ranYs[index]+clearPXY,parseInt(Object.keys(txtMessages)[onscreenTxts[index]])+clearSXY,tBoxH+clearSXY);
     allTxts.splice(index,1);
     onscreenTxts.splice(index,1);
@@ -238,7 +239,7 @@ function oEffect(){
             break;
         case Object.values(txtMessages)[1]:
             // "Your feelings are valid"
-            reduceTimer(5);
+            reduceTimer(8);
             break;
         case Object.values(txtMessages)[2]:
             // "Let me make it up to you"
@@ -332,7 +333,6 @@ gas.addEventListener("click",function(e){
 })
 textInput.addEventListener("keypress",function(e){
     if(e.key === "Enter"){
-        console.log("User input" +textInput.value);
         localStorage.setItem("pAnswer",textInput.value);
         textInput.value = ""; 
         switch (localStorage.getItem("pAnswer")) {
@@ -504,6 +504,7 @@ function ringRandom(){
 function updateTimer (){
     if (timerFill < timerW){
         timerFill += timerW/fullTimer;
+        console.log("T filled- "+ timerFill + " timerW is "+timerW   );
         if (timerFill >= timerW){
             timerFill = timerW;
             endGame();
@@ -622,7 +623,6 @@ function loadPartner() {
             window.location.reload();
         } else{
             localStorage.removeItem("firstLoad");
-            console.log("item removed");
         }
     }
 }
@@ -632,3 +632,4 @@ const initG = setInterval(updateTimer,1000);
 init();
 
 });
+// devMarco 2022
